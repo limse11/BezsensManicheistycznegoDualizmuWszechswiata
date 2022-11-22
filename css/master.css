@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+  --fg-color: #edf0ff;
+  --bg-color: #0A0D11;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition-duration: 0.3s;
+  color: var(--fg-color);
+  font-family: 'Roboto', sans-serif;
+}
+html, body{
+  background-color: var(--bg-color);
+}
+button, input[type="submit"]{
+  background: transparent;
+  color: var(--fg-color);
+  border: 0.25vh solid var(--fg-color);
+  border-radius: 0.7vh;
+  padding: 0.5vh 1vh;
+}
+button:hover, input[type="submit"]:hover{
+  background: var(--fg-color);
+  color: var(--bg-color);
+  cursor: pointer;
+}
+.lform{
+  /* background-color: var(--fg-color); */
+  border: 0.5vh solid var(--fg-color);
+  width: 30vw;
+  height: 65vh;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 3vh;
+  box-shadow: 0px 0px 4vh rgba(0,0,0,0.6);
+  text-align: center;
+}
+.lform-b{
+  padding: 1.5vh 2vh;
+  margin-left: 3vw;
+  margin-right: 3vh;
+  margin-top: 3vh;
+}
+.labs{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#log, #rej{
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  left: 50%;
+  top: 30%;
+}
+#rej{
+  display: none;
+}

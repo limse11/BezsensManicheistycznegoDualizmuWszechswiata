@@ -19,16 +19,20 @@
       <div class="labs">
         <div id="log">
           <h1>Logowanie</h1>
-          <input type="text" name="login" placeholder="Login" id="login"><br>
-          <input type="password" name="pass" placeholder="Hasło" id="pass"><br>
-          <input type="submit" value="Zaloguj">
+          <form action="./forms/login.php" method="post">
+            <input type="text" name="login" placeholder="Login" id="login"><br>
+            <input type="password" name="pass" placeholder="Hasło" id="pass"><br>
+            <input type="submit" value="Zaloguj">
+          </form>
         </div>
         <div id="rej">
           <h1>Rejestracja</h1>
-          <input type="text" name="rlogin" placeholder="Login" id="rlogin"><br>
-          <input type="email" name="email" placeholder="E-mail"><br>
-          <input type="password" name="rpass" placeholder="Hasło" id="rpass"><br>
-          <input type="submit" value="Zarejestruj">
+          <form action="./forms/signup.php" method="post">
+            <input type="text" name="rlogin" placeholder="Login" id="rlogin"><br>
+            <input type="email" name="email" placeholder="E-mail"><br>
+            <input type="password" name="rpass" placeholder="Hasło" id="rpass"><br>
+            <input type="submit" value="Zarejestruj">
+          </form>
         </div>
       </div>
     </div>

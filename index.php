@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="pl" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Logowanie</title>
     <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/login.css">
     <script src="./js/login.js" defer></script>
   </head>
   <body>

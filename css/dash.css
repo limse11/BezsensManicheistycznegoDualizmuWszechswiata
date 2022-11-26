@@ -1,0 +1,65 @@
+#lpan{
+  position: fixed;
+  width: 17vw;
+  height: 100vh;
+  background-color: #06090d;
+  text-align: center;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  box-shadow: 0px 0px 2vh rgba(0,0,0,0.7);
+  z-index: 1;
+}
+#lpan h1{
+}
+#main{
+  width: 83vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  margin-left: 17vw;
+  position: relative;
+}
+#lpan-nav{
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 100%;
+
+}
+#lpan .labs{
+  height: 50%;
+}
+.lpan-b{
+  width: 100%;
+  height: 5vh;
+  border: 1px solid #fff;
+  position: relative;
+}
+.lpan-b p{
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+  left: 50%;
+}
+#logout-b{
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  top: 100%;
+  transform: translateY(-100%);
+}
+#logout-b p{
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+  left: 50%;
+}
+#home, #articles{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 6vh;
+  padding-left: 12vh;
+}
+#articles{
+  display: none;
+}

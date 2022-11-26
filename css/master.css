@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
 :root{
-  --fg-color: rgb(94, 240, 89);
+  --fg-color: #5972f0;
   --bg-color: #0A0D11;
+  --red: #f05959;
+  --txt-full: #dadef5;
+  --txt-sub: #9a9ead;
 }
 *{
   margin: 0;
@@ -10,7 +13,22 @@
   transition-duration: 0.3s;
   color: var(--fg-color);
   font-family: 'Exo 2', sans-serif;
+  border-color: var(--fg-color):
 }
+*::-webkit-scrollbar {
+  width: 0.3vw;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: var(--fg-color);
+}
+
 html, body{
   background-color: var(--bg-color);
 }
@@ -19,16 +37,27 @@ button, input[type="submit"]{
   color: var(--fg-color);
   border: 0.25vh solid var(--fg-color);
   border-radius: 0.7vh;
-  padding: 0.5vh 1vh;
+  padding: 1vh 4vh;
 }
 button:hover, input[type="submit"]:hover{
   background: var(--fg-color);
   color: var(--bg-color);
   cursor: pointer;
-  box-shadow: 0px 0px 1.5vh rgba(94, 240, 89,0.3);
+  box-shadow: 0px 0px 1.5vh rgba(89, 114, 240,0.3);
 }
 .labs{
   position: relative;
   width: 100%;
   height: 100%;
+}
+.chk{
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+
+}
+.svg{
+  transition: none;
+  filter: invert(41%) sepia(84%) saturate(530%) hue-rotate(194deg) brightness(96%) contrast(96%);
 }

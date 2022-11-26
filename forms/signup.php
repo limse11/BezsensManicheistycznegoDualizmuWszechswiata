@@ -8,7 +8,8 @@
     $query = "insert into users (login,email,password) values ('{$login}','{$email}','{$pass}');";
     $result = mysqli_query($connection, $query);
     if($result){
-        header("Location:../app/dash.php");
+        $_SESSION['user']= $login;
+        header("Location:./sucessful.php");
     }
     else{
         header("Location:../index.php?error");

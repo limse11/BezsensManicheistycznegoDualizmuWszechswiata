@@ -28,17 +28,23 @@
 #lpan .labs{
   height: 50%;
 }
+#lpan-tit{
+  font-size: 4vh;
+}
 .lpan-b{
   width: 100%;
   height: 5vh;
-  border: 1px solid #fff;
   position: relative;
+  border-color: var(--fg-color);
 }
 .lpan-b p{
   position: absolute;
   transform: translateY(-50%) translateX(-50%);
   top: 50%;
-  left: 50%;
+  left: 70%;
+  width: 100%;
+  text-align: left;
+  font-size: 2vh;
 }
 #logout-b{
   width: 100%;
@@ -46,12 +52,44 @@
   position: absolute;
   top: 100%;
   transform: translateY(-100%);
+  border-color: var(--red);
+}
+#logout-b:hover{
+  background-color: rgba(20,20,30,0.15);
+  border-left: 0.5vh solid var(--red);
+  cursor: pointer;
+}
+#logout-b:hover p{
+  color: var(--red);
+}
+#logout-b:hover img{
+  filter: invert(53%) sepia(99%) saturate(1450%) hue-rotate(322deg) brightness(94%) contrast(100%);
 }
 #logout-b p{
   position: absolute;
   transform: translateY(-50%) translateX(-50%);
   top: 50%;
   left: 50%;
+  font-size: 2vh;
+}
+#logout-b img{
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+  left: 20%;
+  height: 3vh;
+}
+.lpan-b img{
+    position: absolute;
+    transform: translateY(-50%) translateX(-50%);
+    top: 50%;
+    left: 10%;
+    height: 3vh;
+}
+.lpan-b:hover{
+  border-left: 0.5vh solid;
+  background-color: rgba(20,20,30,0.15);
+  cursor: pointer;
 }
 #home, #articles{
   width: 100%;
@@ -59,7 +97,148 @@
   position: absolute;
   padding: 6vh;
   padding-left: 12vh;
+  overflow-x: hidden;
 }
 #articles{
   display: none;
+}
+#home-art{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  width: 90%;
+  height: 45%;
+}
+.article-m{
+  width: 20vw;
+  height: 100%;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  background-color: #06090d;
+  box-shadow: 0px 0px 2vh rgba(0,0,0,0.7);
+  float: left;
+  border-radius: 1.5vh;
+  overflow: hidden;
+  margin-bottom: 6vh;
+}
+.article-m:hover{
+  transform: translateY(-5%);
+  cursor: pointer;
+}
+.article-m .m-img{
+  height: 65%;
+  width: 100%;
+  background-image: url('https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.article-m .m-cont{
+  height: 35%;
+  width: 100%;
+}
+.article-m .m-cont .m-head{
+  height: 30%;
+  width: 100%;
+}
+.article-m .m-cont .m-head .m-title{
+  height: 100%;
+  width: 70%;
+  float: left;
+  position: relative;
+}
+.article-m .m-cont .m-head .m-title h1{
+  font-size: 2.5vh;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 2vh;
+  color: var(--txt-full);
+}
+.article-m .m-cont .m-head .m-user{
+  height: 100%;
+  width: 30%;
+  float: left;
+  position: relative;
+  padding-left: 2vh;
+}
+.article-m .m-cont .m-head .m-user p{
+  font-size: 1.5vh;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--txt-sub);
+}
+.article-m .m-cont .m-desc{
+  height: 60%;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-bottom: 10%;
+}
+.article-m .m-cont .m-desc p{
+  font-size: 1.5vh;
+  margin: 2vh;
+  color: var(--txt-sub);
+}
+#home-d{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 45%;
+}
+#clock-b{
+  width: 30%;
+  border-left: 0.5vh solid;
+  padding-left: 2vh;
+  height: 25%;
+}
+#clock{
+  font-size: 5vh;
+  color: var(--txt-full);
+}
+#date{
+  font-size: 3vh;
+  color: var(--txt-full);
+}
+#home-d span{
+  color: var(--fg-color);
+}
+#clock-b:hover{
+}
+#welcome{
+  position: absolute;
+  transform: translateX(-100%);
+  left: 100%;
+  top: 0%;
+  width: 30%;
+  height: 25%;
+  text-align: right;
+  padding-right: 2vh;
+  border-right: 0.5vh solid;
+}
+#welcome h1{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4vh;
+  color: var(--txt-full);
+}
+#h-bar{
+  background-color: #06090d;
+  box-shadow: 0px 0px 2vh rgba(0,0,0,0.7);
+}
+#h-tit{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  font-size: 4vh;
 }

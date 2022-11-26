@@ -8,11 +8,11 @@
   left: 50%;
   top: 50%;
   border-radius: 3vh;
-  box-shadow: 0px 0px 3vh rgba(94, 240, 89,0.1);
+  box-shadow: 0px 0px 3vh rgba(89, 114, 240,0.1);
   text-align: center;
 }
 .lform:hover{
-box-shadow: 0px 0px 3vh rgba(94, 240, 89,0.2);
+box-shadow: 0px 0px 3vh rgba(89, 114, 240,0.2);
 }
 .lform h1{
   margin-bottom: 6vh;
@@ -47,4 +47,76 @@ box-shadow: 0px 0px 3vh rgba(94, 240, 89,0.2);
 }
 #rej{
   display: none;
+}
+#err{
+  transform: translateX(-50%) translateY(-100%);
+  position: absolute;
+  left: 50%;
+  top: 90%;
+}
+#err p{
+  color: var(--red);
+}
+.c-border{
+  width: 100vh;
+  height: 100vh;
+  background-image: linear-gradient(to left, #743ad5, #d53a9d);
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  top: 50%;
+  animation: rotation 2s infinite linear;
+}
+.c-hidden{
+  width: 70vh;
+  height: 70vh;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+  border-radius: 2vh;
+}
+@keyframes rotation {
+    from {
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+}
+.c-cont{
+  width: 69vh;
+  height: 69vh;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  top: 50%;
+  background-color: var(--bg-color);
+  border-radius: 2vh;
+  text-align: center;
+  padding-top: 10vh;
+}
+.c-cont h1{
+  font-size: 3vh;
+  color: var(--txt-full);
+  margin-bottom: 35vh;
+}
+.c-cont p{
+  font-size: 2.5vh;
+  color: var(--txt-full);
+}
+.c-cont button{
+  font-size: 2vh;
+  padding: 1.5vh 5vh;
+}
+.c-cont span{
+  color: var(--fg-color);
+}
+.c-cont img{
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  top: 45%;
+  height: 15vh;
 }

@@ -8,12 +8,6 @@
     <script src="./js/login.js" defer></script>
   </head>
   <body>
-    <?php
-      $host = "127.0.0.1";
-      $user = "root";
-      $password = "";
-      $db = "baza";
-    ?>
     <div class="lform">
       <button type="button" class="lform-b" onclick="log()">Logowanie</button>
       <button type="button" class="lform-b" onclick="rej()">Rejestracja</button>
@@ -35,6 +29,14 @@
             <input type="submit" value="Zarejestruj">
           </form>
         </div>
+      </div>
+      <div id="err">
+        <p><?php
+          session_start();
+          if (isset($_SESSION['invalid'])) {
+            echo "Niepoprawne dane";
+          }
+        ?></p>
       </div>
     </div>
   </body>

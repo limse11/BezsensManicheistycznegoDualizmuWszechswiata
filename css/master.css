@@ -18,17 +18,12 @@
 *::-webkit-scrollbar {
   width: 0.3vw;
 }
-
-/* Track */
 *::-webkit-scrollbar-track {
   background: transparent;
 }
-
-/* Handle */
 *::-webkit-scrollbar-thumb {
   background: var(--fg-color);
 }
-
 html, body{
   background-color: var(--bg-color);
   overflow-x: hidden;

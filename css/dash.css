@@ -9,8 +9,6 @@
   box-shadow: 0px 0px 2vh rgba(0,0,0,0.7);
   z-index: 1;
 }
-#lpan h1{
-}
 #main{
   width: 83vw;
   height: 100vh;
@@ -241,4 +239,169 @@
   left: 50%;
   transform: translateX(-50%) translateY(-100%);
   font-size: 4vh;
+}
+.art-d{
+  height: 45vh;
+}
+#art-add{
+  border: 0.25vh solid;
+  position: relative;
+}
+#art-add:hover{
+  border: 0.5vh solid;
+  box-shadow: 0px 0px 2vh rgba(89, 240, 109,0.3);
+  border-color: #59f06d;
+}
+#art-add:hover img{
+  filter: invert(83%) sepia(14%) saturate(1823%) hue-rotate(68deg) brightness(96%) contrast(97%);
+}
+#art-add img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 30%;
+}
+#add-cover, #err-cover{
+  background-color: rgba(0,0,0,0.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  backdrop-filter: blur(0.6vh);
+  display: none;
+}
+#add-b{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 60vw;
+  height: 85vh;
+  background-color: var(--bg-color);
+  border-radius: 2vh;
+  border: 0.4vh solid;
+  text-align: center;
+}
+#add-close, #err-close{
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  transform: translateX(-100%);
+  width: 10vh;
+  height: 10vh;
+}
+#close-b{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 60%;
+  filter: invert(53%) sepia(99%) saturate(1450%) hue-rotate(322deg) brightness(94%) contrast(100%);
+}
+#add-close:hover #close-b{
+  height: 80%;
+}
+#add-close:hover{
+  cursor: pointer;
+}
+#add-b h1{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 4.5vh;
+}
+#add-b form{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: var(--txt-sub);
+  font-size: 1.5vh;
+}
+#add-b form p, label{
+  color: var(--txt-full);
+  font-size: 1.8vh;
+}
+#add-b form textarea{
+  resize: none;
+  margin-bottom: 4vh;
+}
+#add-b form input{
+  margin-bottom: 2vh;
+}
+#add-b form input[type="url"]{
+  width: 20vw;
+  margin-top: 1vh;
+}
+#add-b form input[type="radio"]{
+  margin-bottom: 1vh;
+  margin-right: 1vh;
+}
+#add-b form #add-image{
+  margin-top: 4vh;
+  margin-bottom: 3vh;
+}
+#add-b form input[type="submit"]{
+  padding: 1.5vh 6vh;
+}
+#articles #my-tit{
+  margin-top: 4vh;
+  font-size: 5vh;
+  margin-bottom: 15vh;
+  text-align: center;
+  transform: translateX(-5%);
+}
+#err-b{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 30vw;
+  height: 40vh;
+  background-color: var(--bg-color);
+  border-radius: 2vh;
+  border: 0.4vh solid;
+  text-align: center;
+}
+#close-err-b{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 60%;
+  filter: invert(53%) sepia(99%) saturate(1450%) hue-rotate(322deg) brightness(94%) contrast(100%);
+}
+#err-close:hover #close-b{
+  height: 80%;
+}
+#err-close:hover{
+  cursor: pointer;
+}
+#err-b h1{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 4.5vh;
+  color: var(--red);
+}
+#err-b p{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3vh;
+  color: var(--txt-full);
+}
+#err-b button{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 2vh;
 }

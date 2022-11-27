@@ -6,6 +6,18 @@ function articles(){
   document.querySelector('#articles').style.display = 'block';
   document.querySelector('#home').style.display = 'none';
 }
+function addClose(){
+  document.querySelector('#add-cover').style.display = 'none';
+}
+function addOpen(){
+  document.querySelector('#add-cover').style.display = 'block';
+}
+function errClose(){
+  document.querySelector('#err-cover').style.display = 'none';
+}
+function errOpen(){
+  document.querySelector('#err-cover').style.display = 'block';
+}
 var days = ['Nd', 'Pon', 'Wt', 'Śr', 'Czw', 'Pi', 'Sob'];
 function startTime() {
   const today = new Date();

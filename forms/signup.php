@@ -4,7 +4,7 @@
     $login = $_POST['rlogin'];
     $pass = hash("sha256", $_POST['rpass']);
     $email = $_POST['email'];
-    $connection = mysqli_connect("127.0.0.1","root","","baza");
+    $connection = mysqli_connect("127.0.0.1","root","","wu_baza");
     $query = "insert into users (login,email,password) values ('{$login}','{$email}','{$pass}');";
     $result = mysqli_query($connection, $query);
     if($result){

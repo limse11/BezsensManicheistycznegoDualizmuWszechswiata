@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if (isset($_POST['rlogin'])&&isset($_POST['rpass'])&&isset($_POST['email'])&&filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+  if (isset($_POST['rlogin'])&&!empty($_POST['rlogin'])&&isset($_POST['rpass'])&&!empty($_POST['rpass'])&&isset($_POST['email'])&&!empty($_POST['email'])&&filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
     $login = $_POST['rlogin'];
     $pass = hash("sha256", $_POST['rpass']);
     $email = $_POST['email'];
@@ -15,5 +15,8 @@
         header("Location:../index.php?error");
     }
     mysqli_close($connection);
+  }
+  else{
+      header("Location:../index.php?error");
   }
 ?>

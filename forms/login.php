@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if (isset($_POST['login'])&&isset($_POST['pass'])){
+  if (isset($_POST['login'])&&!empty($_POST['login'])&&isset($_POST['pass'])&&!empty($_POST['pass'])){
     $login = $_POST['login'];
     $pass = hash("sha256", $_POST['pass']);
     $connection = mysqli_connect("localhost","root","","wu_baza");
@@ -15,5 +15,9 @@
       $_SESSION['invalid'] = 1;
       header("Location:../index.php?error");
     }
+  }
+  else{
+    $_SESSION['invalid'] = 1;
+    header("Location:../index.php?error");
   }
 ?>
